@@ -213,9 +213,8 @@
 // ============================================================
 // KONFIGURÁCIA — vyplň pred nasadením
 // ============================================================
-const OPENROUTER_API_KEY = ["sk-or-v1-63d9c922", "33c1c65feaaef04352c880ff88947e857dac2fa7327dfa077c05e771"].join("");
 const OPENROUTER_MODEL = "openai/gpt-oss-120b:free";
-const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
+const OPENROUTER_URL = "https://mf-chat-proxy.sona-zahovayova.workers.dev";
 
 // FAQ dáta — priamo v kóde (nie je potrebný backend ani Firebase)
 const FAQ_COMMON = {
@@ -545,8 +544,6 @@ ${
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
-          "HTTP-Referer": "https://mf-guest-chat.vercel.app",
         },
         body: JSON.stringify(body),
       });
