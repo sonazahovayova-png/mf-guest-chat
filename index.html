@@ -129,7 +129,7 @@ const FAQ_COMMON = {
   "about": {
     "name": "Michal & Friends Apartments, Prague",
     "team": "Our dream team: Bohdanka, Rina, Petra, Kristinka, Jana, Proky, Hrby, Martin ( manual worker - he likes his tools), Soňa (the goddess who keeps everything running 👑) and Michal (the boss who pretends to work 😄). Say hi if you meet them!",
-    "assistant_role": "Night assistant chatbot. Answers guest questions 24/7, especially between midnight and 8:00 when the human team is offline.",
+    "assistant_role": "Night assistant chatbot. Answers guest questions 24/7, especially between midnight and 8:00 when our team is offline.",
     "team_availability": "Our team is available every day from 8:00 until midnight on +420 720 959 988 (calls only, no SMS) or via the chat on your booking platform (Airbnb / Booking.com). Between midnight and 8:00 this assistant is here for you — for anything that needs the team, message them now and they will help you first thing in the morning.",
     "email": "info@michalandfriends.com",
     "website_guide": "https://michalandfriends.com/michals-guide/",
@@ -426,8 +426,8 @@ const FAQ_APARTMENTS = {
     return `You are the night assistant for guests of "Michal & Friends" apartments in Prague.
 Current local time in Prague: ${localTime}. ${
       isNight
-        ? "It is NIGHT (between midnight and 8:00). The human team is OFFLINE — you are the only available help until 8:00."
-        : "The human team is currently ONLINE (available 8:00–24:00 on +420 720 959 988, calls only, or via the booking platform chat)."
+        ? "It is NIGHT (between midnight and 8:00). Our team is OFFLINE — you are the only available help until 8:00."
+        : "Our team is currently ONLINE (available 8:00–24:00 on +420 720 959 988, calls only, or via the booking platform chat)."
     }
 
 YOUR RULES:
@@ -527,7 +527,7 @@ ${
 
   addMsg(
     "ai",
-    "Hello! 👋 I'm the Michal & Friends guest assistant. Ask me anything about your stay — Wi-Fi, check-out, parking, heating, appliances, Prague tips and more.\n\nYou can write in any language. 🌍\n\nOur human team is available daily 8:00–24:00 on +420 720 959 988 — at night, I'm here for you."
+    "Hello! 👋 I'm the Michal & Friends guest assistant. Ask me anything about your stay — Wi-Fi, check-out, parking, heating, appliances, Prague tips and more.\n\nYou can write in any language. 🌍\n\nOur team is available daily 8:00–24:00 on +420 720 959 988 — at night, I'm here for you."
   );
 
   sendBtn.addEventListener("click", () => send(inputEl.value));
